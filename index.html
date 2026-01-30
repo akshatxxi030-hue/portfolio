@@ -3,73 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshat Singh | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Akshat Singh | AI/ML Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <div class="logo">AKSHAT.S</div>
-        <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#expertise">Expertise</a>
-            <a href="mailto:akshatxxi030@gmail.com">Contact</a>
-        </div>
+        <div class="logo">AKSHAT<span>.SINGH</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <span class="tagline">BY HARDWORK & DETERMINATION</span>
-                <h1>Akshat <br> Singh,</h1>
-                <p class="bio">
-                    Ranchi-based Machine Learning and Data Science enthusiast with hands-on experience building end-to-end ML pipelines and REST APIs.
-                </p>
-                <div class="contact-info">
-                    <a href="mailto:akshatxxi030@gmail.com">mail@akshat.com</a>
-                </div>
+    <section id="home" class="hero">
+        <div class="hero-bg-text">ENGINEER</div>
+        <div class="hero-content">
+            <p class="pre-title">Aspiring AI/ML Engineer</p>
+            <h1>Designing the <br><span class="highlight">Future of Data.</span></h1>
+            <p class="description">
+                B.Sc. Biotechnology student at St. Xavier's College transitioning into 
+                the world of Data Science, NLP, and Cloud-native AI deployment.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary">Let's Talk</a>
             </div>
-            <div class="hero-image-container">
-                <img src="https://via.placeholder.com/600x800" alt="Akshat Singh" class="profile-img">
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="projects-section">
-            <span class="count">01/02</span>
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="empty-project-slot">
-                    <p>Select works coming soon...</p>
-                </div>
+    <section id="projects" class="section">
+        <h2 class="section-label">01 // SELECTED PROJECTS</h2>
+        <div class="placeholder-grid">
+            <div class="empty-box">
+                <span>PROJECT_SLOT_01</span>
+                <p>Awaiting deployment of Churn/NLP models...</p>
             </div>
-        </section>
+            <div class="empty-box">
+                <span>PROJECT_SLOT_02</span>
+                <p>Awaiting deployment of Heart Disease/Movie Recommendation models...</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="expertise" class="expertise-section">
-            <h2 class="section-title">Expertise</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <h3>Machine Learning</h3>
-                    <p>EDA, Feature Engineering, Model Evaluation, NLP, and Scikit-learn.</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Frameworks & Tools</h3>
-                    <p>FastAPI, Streamlit, Docker, and Jupyter Notebooks.</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Deployment</h3>
-                    <p>Cloud-native architecture and containerized deployment on Render.</p>
-                </div>
-                <div class="skill-item">
-                    <h3>Education</h3>
-                    <p>B.Sc. Biotechnology | St. Xavier's College, Ranchi.</p>
-                </div>
+    <section id="skills" class="section">
+        <h2 class="section-label">02 // TECHNICAL STACK</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages & Data</h3>
+                <ul>
+                    <li>Python (Pandas, NumPy, Matplotlib)</li>
+                    <li>Scikit-learn & EDA</li>
+                    <li>NLP (Concept Drift Detection)</li>
+                </ul>
             </div>
-        </section>
-    </main>
+            <div class="skill-category">
+                <h3>DevOps & Deployment</h3>
+                <ul>
+                    <li>FastAPI & REST APIs</li>
+                    <li>Docker Containerization</li>
+                    <li>Cloud Deployment (Render)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-label">03 // CONNECTION</h2>
+        <div class="contact-card">
+            <h3>Have a project in mind?</h3>
+            <p>I'm currently seeking internships to apply my ML and data analysis skills.</p>
+            <a href="mailto:akshatxxi030@gmail.com" class="email-link">akshatxxi030@gmail.com</a>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2026 Akshat Singh — Aspiring AI/ML Engineer</p>
+        <p>Built by Akshat Singh • 2026</p>
     </footer>
 
 </body>
