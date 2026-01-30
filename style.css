@@ -130,16 +130,50 @@ nav {
     gap: 30px;
 }
 
-.empty-box {
-    background: var(--card-bg);
-    height: 400px;
+.project-card {
+    background: #111;
     border: 1px solid #222;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
+    justify-content: space-between;
+    transition: 0.3s;
 }
+
+.project-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+
+.project-header span { font-size: 0.7rem; color: var(--accent); letter-spacing: 2px; }
+.project-header h3 { font-size: 1.8rem; margin: 10px 0 20px; font-family: var(--font); }
+
+.project-desc { color: var(--text-dim); margin-bottom: 25px; line-height: 1.6; }
+
+.project-tech { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+.project-tech span {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: var(--accent);
+}
+
+.project-links { display: flex; gap: 15px; }
+.link-btn {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background: #1a1a1a;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.link-btn:hover { background: #222; color: var(--accent); }
+.link-btn.streamlit { border: 1px solid var(--accent); color: var(--accent); background: transparent; }
+.link-btn.streamlit:hover { background: var(--accent); color: #000; }
 
 .empty-box:hover { border-color: var(--accent); }
 
@@ -196,3 +230,4 @@ footer {
     .contact-card { padding: 40px; }
     .email-link { font-size: 1.5rem; }
 }
+
