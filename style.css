@@ -171,13 +171,6 @@ nav {
     transition: 0.3s;
 }
 
-.link-btn:hover { background: #222; color: var(--accent); }
-.link-btn.streamlit { border: 1px solid var(--accent); color: var(--accent); background: transparent; }
-.link-btn.streamlit:hover { background: var(--accent); color: #000; }
-
-.empty-box:hover { border-color: var(--accent); }
-
-.empty-box span { color: var(--accent); font-size: 0.7rem; margin-bottom: 10px; }
 
 /* Skills container */
 .skills-container {
@@ -230,4 +223,5 @@ footer {
     .contact-card { padding: 40px; }
     .email-link { font-size: 1.5rem; }
 }
+
 
